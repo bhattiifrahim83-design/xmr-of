@@ -548,7 +548,7 @@ def process_trade(trade):
 
 async def main():
     """Main worker function"""
-    uri = f"wss://fstream.binance.com/ws/{SYMBOL}@aggTrade"
+    uri = f"wss://fstream.binance.com/market/ws/{SYMBOL}@aggTrade"
     logger.info(f"Starting FHCharts worker for {SYMBOL}")
     
     while True:
